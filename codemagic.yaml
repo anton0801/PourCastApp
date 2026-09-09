@@ -1,6 +1,6 @@
 workflows:
   sample-workflow:
-    name: Proofs Of Paths workflow
+    name: Pour Cast workflow
     max_build_duration: 120
     instance_type: mac_mini_m1
     integrations:
@@ -8,13 +8,13 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.app.proofsofpaths
+        bundle_identifier: com.castinpourss.cast
       vars:
         APP_STORE_CONNECT_KEY: key
-        APP_STORE_APPLE_ID: 6808678312
-        BUNDLE_ID: "com.app.proofsofpaths"
-        XCODE_PROJECT: "ProofOfPath.xcodeproj"
-        XCODE_SCHEME: "ProofOfPath"
+        APP_STORE_APPLE_ID: 6810398127
+        BUNDLE_ID: "com.castinpourss.cast"
+        XCODE_PROJECT: "PourCast.xcodeproj"
+        XCODE_SCHEME: "PourCast"
     scripts:
       - name: Clean and Resolve SPM Dependencies
         script: |
